@@ -26,3 +26,11 @@ ls
 ```
 
 ![setup](images/9/9.png)
+
+```sh
+cd jenkins-test/
+git status
+git log
+```
+
+![setup](images/9/10.png)
