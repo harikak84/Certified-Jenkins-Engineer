@@ -24,6 +24,12 @@
 
 ![plugin](images/10/12.png)
 
+```sh
+sudo su -
+systemctl restart jenkins
+systemctl status jenkins
+```
+
 ![plugin](images/10/13.png)
 
 ![plugin](images/10/14.png)
@@ -39,6 +45,10 @@
 ![plugin](images/10/19.png)
 
 ![plugin](images/10/20.png)
+
+```sh
+wget https://updates.jenkins.io/download/plugins/thinBackup/1.8/thinBackup.hpi
+```
 
 ![plugin](images/10/21.png)
 
