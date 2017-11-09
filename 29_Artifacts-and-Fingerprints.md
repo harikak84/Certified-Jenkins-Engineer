@@ -1,8 +1,14 @@
 #### 29. Artifacts and Fingerprints
 
+- ``Jenkinsfile``
+
 ```
 pipeline {
   agent any
+
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '2', artifactNumToKeepStr: '1'))
+  }
 
   stages {
      stage('build') {
@@ -14,7 +20,7 @@ pipeline {
 
   post {
     always {
-      archive 'dist/*.jar'
+      archiveArtifacts artifacts: 'dist/*.jar', fingerprint: true
     }
   }
 }
